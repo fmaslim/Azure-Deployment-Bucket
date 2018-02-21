@@ -65,22 +65,22 @@ var JokeDirDirective = /** @class */ (function () {
         this.renderer.setElementStyle(part, 'display', 'none');
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* HostListener */])('mouseover'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* HostListener */])('mouseover'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], JokeDirDirective.prototype, "onmouseover", null);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* HostListener */])('mouseout'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* HostListener */])('mouseout'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], JokeDirDirective.prototype, "onmouseout", null);
     JokeDirDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* Directive */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* Directive */])({
             selector: '[appJokeDir]'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer */]])
     ], JokeDirDirective);
     return JokeDirDirective;
 }());
@@ -110,7 +110,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div style=\"text-align:center\">\r\n  <h1 #header>\r\n    Welcome to {{ title }}!\r\n  </h1>\r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n<ul>\r\n  <li>\r\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2>\r\n  </li>\r\n  <li>\r\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/angular/angular-cli/wiki\">CLI Documentation</a></h2>\r\n  </li>\r\n  <li>\r\n    <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2>\r\n  </li>\r\n</ul>\r\n\r\n<app-http-promise></app-http-promise>\r\n<br />\r\n<app-http-promise></app-http-promise>\r\n"
+module.exports = "<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -261,23 +261,23 @@ var AppComponent = /** @class */ (function () {
         this.jokes.push(new __WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["a" /* Joke */](joke.UserID, joke.Username));
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */]),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */])
     ], AppComponent.prototype, "jokeViewChild", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewChild */])('header'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* ViewChild */])('header'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */])
     ], AppComponent.prototype, "headerElm", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChild */])(__WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */]),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* ContentChild */])(__WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */])
     ], AppComponent.prototype, "jokeContentChild", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* ContentChildren */])(__WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */]),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ContentChildren */])(__WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["b" /* JokeComponent */])
     ], AppComponent.prototype, "jokeContentChildren", void 0);
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -311,6 +311,10 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__http_http_component__ = __webpack_require__("../../../../../src/app/http/http.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__http_promise_http_promise_component__ = __webpack_require__("../../../../../src/app/http-promise/http-promise.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__http_observable_http_observable_component__ = __webpack_require__("../../../../../src/app/http-observable/http-observable.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__http_jsonp_http_jsonp_component__ = __webpack_require__("../../../../../src/app/http-jsonp/http-jsonp.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__nav_home_nav_home_component__ = __webpack_require__("../../../../../src/app/nav-home/nav-home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -335,11 +339,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+
+// In order for Angular to display certain components based on the requested URL,
+// set up the mapping of URLs to Components via Route Configuration
+// which is an array like so:
+var routes = [
+    // For the special case of an empty URL, need to add pathMatch: 'full' property so Angular knows
+    // it should be matching exactly the empty string and not the partially empty string
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_18__nav_home_nav_home_component__["a" /* NavHomeComponent */] },
+    { path: 'jsonp', redirectTo: 'httpjsonp' },
+    { path: 'joke', component: __WEBPACK_IMPORTED_MODULE_5__joke_joke_component__["b" /* JokeComponent */] },
+    { path: 'injector', component: __WEBPACK_IMPORTED_MODULE_11__injector_injector_component__["a" /* InjectorComponent */] },
+    { path: 'modeldriven', component: __WEBPACK_IMPORTED_MODULE_9__model_driven_form_model_driven_form_component__["a" /* ModelDrivenFormComponent */] },
+    { path: 'templatedriven', component: __WEBPACK_IMPORTED_MODULE_10__template_driven_form_template_driven_form_component__["a" /* TemplateDrivenFormComponent */] },
+    { path: 'http', component: __WEBPACK_IMPORTED_MODULE_13__http_http_component__["a" /* HttpComponent */] },
+    { path: 'httppromise', component: __WEBPACK_IMPORTED_MODULE_15__http_promise_http_promise_component__["a" /* HttpPromiseComponent */] },
+    { path: 'httpjsonp', component: __WEBPACK_IMPORTED_MODULE_17__http_jsonp_http_jsonp_component__["a" /* HttpJsonpComponent */] },
+    // This is a catch-all route that gets directed to if there is no match for the requested route
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_4__header_header_component__["a" /* HeaderComponent */] }
+];
+// Then, install the routes by importing RouterModule.forRoot(routes) into NgModule
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["H" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["J" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_4__header_header_component__["a" /* HeaderComponent */],
@@ -354,15 +383,20 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_12__injector_provider_injector_provider_component__["a" /* ChildComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__injector_provider_injector_provider_component__["c" /* ParentComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__http_http_component__["a" /* HttpComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__http_promise_http_promise_component__["a" /* HttpPromiseComponent */]
+                __WEBPACK_IMPORTED_MODULE_15__http_promise_http_promise_component__["a" /* HttpPromiseComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__http_observable_http_observable_component__["a" /* HttpObservableComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__http_jsonp_http_jsonp_component__["a" /* HttpJsonpComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__nav_home_nav_home_component__["a" /* NavHomeComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_14__angular_http__["c" /* HttpModule */]
+                __WEBPACK_IMPORTED_MODULE_14__angular_http__["c" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_14__angular_http__["e" /* JsonpModule */],
+                __WEBPACK_IMPORTED_MODULE_19__angular_router__["a" /* RouterModule */].forRoot(routes, { useHash: true }) // useHash is for Path Location Strategies
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_11__injector_injector_component__["b" /* OtherService */], __WEBPACK_IMPORTED_MODULE_11__injector_injector_component__["c" /* SimpleService */], __WEBPACK_IMPORTED_MODULE_12__injector_provider_injector_provider_component__["d" /* SimpleProviderService */], __WEBPACK_IMPORTED_MODULE_15__http_promise_http_promise_component__["b" /* SearchService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_11__injector_injector_component__["b" /* OtherService */], __WEBPACK_IMPORTED_MODULE_11__injector_injector_component__["c" /* SimpleService */], __WEBPACK_IMPORTED_MODULE_12__injector_provider_injector_provider_component__["d" /* SimpleProviderService */]],
             // these classes have to be imported in the import statement above
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
@@ -421,7 +455,7 @@ var HeaderComponent = /** @class */ (function () {
     HeaderComponent.prototype.ngOnInit = function () {
     };
     HeaderComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-header',
             template: __webpack_require__("../../../../../src/app/header/header.component.html"),
             styles: [__webpack_require__("../../../../../src/app/header/header.component.css")]
@@ -429,6 +463,248 @@ var HeaderComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], HeaderComponent);
     return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/http-jsonp/http-jsonp.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/http-jsonp/http-jsonp.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<app-nav-home></app-nav-home>\n<form class=\"form-inline\">\n  <div class=\"form-group\">\n    <input type=\"search\"\n           class=\"form-control\"\n           placeholder=\"Enter search string\"\n           [formControl]=\"searchField\">\n  </div>\n</form>\n\n<div class=\"text-center\">\n  <p class=\"lead\" *ngIf=\"loading\">Loading...</p>\n</div>\n\n<ul class=\"list-group\">\n  <li class=\"list-group-item\" *ngFor=\"let item of results | async as list\">\n    <img src=\"{{ item.thumbnail }}\">\n    - <a href=\"{{ item.link }}\">{{ item.track }}</a>\n  </li>\n</ul>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/http-jsonp/http-jsonp.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export SearchService */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpJsonpComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__http_promise_http_promise_component__ = __webpack_require__("../../../../../src/app/http-promise/http-promise.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_switchMap__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/switchMap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_do__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/do.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+// JSONP is a method of performing API requests that works around the issue of CORS
+// Unless an API sets certain headers in the response, a browser will reject it.
+// JSONP treats the API as if it is a javascript file. It dynamically adds the URL as if
+// it were a script tag
+// API that supports JSONP return something that looks like javascript. For example, it might return
+// process_response({hello: 'world'});
+// JSONP can only be used when:
+// 1. The API itself supports JSONP. It needs to return the JSON response wrapped in a function
+//    and it usually lets the caller pass in the function name.
+// 2. It can only be used with GET requests. No POST/PUT/DELETE and so on.
+var SearchService = /** @class */ (function () {
+    function SearchService(jsonp) {
+        this.jsonp = jsonp;
+        this.apiRoot = 'https://itunes.apple.com/search';
+    }
+    SearchService.prototype.search = function (term) {
+        var url = this.apiRoot + "/term=" + term + "&media=music&limit=20&callback=JSONP_CALLBACK";
+        return this.jsonp.request(url).map(function (response) {
+            return response.json().results.map(function (item) {
+                return new __WEBPACK_IMPORTED_MODULE_2__http_promise_http_promise_component__["b" /* SearchItem */](item.trackName, item.artistName, item.trackViewUrl, item.artworkUrl30, item.artistId);
+            });
+        });
+    };
+    SearchService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Jsonp */]])
+    ], SearchService);
+    return SearchService;
+}());
+
+var HttpJsonpComponent = /** @class */ (function () {
+    function HttpJsonpComponent(iTunesSearch) {
+        this.iTunesSearch = iTunesSearch;
+    }
+    HttpJsonpComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.searchField = new __WEBPACK_IMPORTED_MODULE_8__angular_forms__["a" /* FormControl */]();
+        this.results = this.searchField.valueChanges
+            .debounceTime(400)
+            .distinctUntilChanged()
+            .do(function () { return _this.loading = true; })
+            .switchMap(function (term) { return _this.iTunesSearch.search(term); })
+            .do(function () { return _this.loading = false; });
+    };
+    HttpJsonpComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-http-jsonp',
+            template: __webpack_require__("../../../../../src/app/http-jsonp/http-jsonp.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/http-jsonp/http-jsonp.component.css")],
+            providers: [SearchService]
+        }),
+        __metadata("design:paramtypes", [SearchService])
+    ], HttpJsonpComponent);
+    return HttpJsonpComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/http-observable/http-observable.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/http-observable/http-observable.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<form class=\"form-inline\">\n  <div class=\"form-group\">\n    <input type=\"search\"\n           class=\"form-control\"\n           placeholder=\"Enter search string\"\n           [formControl]=\"searchField\">\n  </div>\n\n</form>\n\n<ul>\n  <li *ngFor=\"let item of results | async as list\">\n    <img [src]=\"item.thumbnail\"> -\n    <a href=\"{{ item.link }}\">{{ item.name }}</a>\n    by {{ item.artist }}\n  </li>\n</ul>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/http-observable/http-observable.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export SearchService */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpObservableComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__http_promise_http_promise_component__ = __webpack_require__("../../../../../src/app/http-promise/http-promise.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_switchMap__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/switchMap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_do__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/do.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+var SearchService = /** @class */ (function () {
+    function SearchService(http) {
+        this.http = http;
+        this.apiRoot = 'https://iTunes.apple.com/search';
+    }
+    // In this observable example, make the search function RETURN an observable
+    // that the caller will subscribe to
+    SearchService.prototype.search = function (term) {
+        var url = this.apiRoot + "?term=" + term + "&media=music&limit=20";
+        return this.http.get(url).map(function (response) {
+            return response.json().results.map(function (item) {
+                return new __WEBPACK_IMPORTED_MODULE_1__http_promise_http_promise_component__["b" /* SearchItem */](item.trackName, item.artistName, item.trackViewUrl, item.artworkUrl30, item.artistId);
+            });
+        });
+    };
+    SearchService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]])
+    ], SearchService);
+    return SearchService;
+}());
+
+// By using Observable, both the component and the service are returning Observables.
+// And they need to be linked in order for them to work properly
+// The valueChanges call below is of type Observable<string>, and it needs to be changed to Observable<SearchItem[]>
+// To do that, use a chain of operators.
+var HttpObservableComponent = /** @class */ (function () {
+    function HttpObservableComponent(iTunesSearch) {
+        this.iTunesSearch = iTunesSearch;
+        this.loading = false;
+    }
+    HttpObservableComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.searchField = new __WEBPACK_IMPORTED_MODULE_8__angular_forms__["a" /* FormControl */]();
+        this.results = this.searchField.valueChanges
+            .debounceTime(400)
+            .distinctUntilChanged()
+            .switchMap(function (term) { return _this.iTunesSearch.search(term); })
+            .do(function () { return _this.loading = false; });
+    };
+    HttpObservableComponent.prototype.doSearch = function (keyword) {
+        this.loading = true;
+        // 1. This subscribes to the Observable and stores the results locally on the component
+        // this.iTunesSearch.search(keyword).subscribe(data => {
+        //   this.loading = false;
+        //   this.results = data;
+        // });
+        // 2. Instead of doing #1, use async pipe so results stores the Observable itself and not the array of SearchItems
+        this.iTunesSearch.search(keyword);
+    };
+    HttpObservableComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-http-observable',
+            template: __webpack_require__("../../../../../src/app/http-observable/http-observable.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/http-observable/http-observable.component.css")],
+            providers: [SearchService]
+        }),
+        __metadata("design:paramtypes", [SearchService])
+    ], HttpObservableComponent);
+    return HttpObservableComponent;
 }());
 
 
@@ -456,7 +732,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/http-promise/http-promise.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form class=\"form-inline\">\n  <div class=\"form-group\">\n    <input type=\"text\" class=\"form-control\" placeholder=\"Enter search string\" #search>\n  </div>\n  <button class=\"btn btn-primary\" (click)=\"doSearch(search.value)\">Search</button>\n</form>\n\n{{ searchText }}\n\n"
+module.exports = "<app-nav-home></app-nav-home>\n<form class=\"form-inline\">\n  <div class=\"form-group\">\n    <input type=\"text\" class=\"form-control\" placeholder=\"Enter search string\" #search>\n  </div>\n  <button class=\"btn btn-primary\" (click)=\"doSearch(search.value)\">Search</button>\n</form>\n\n<div class=\"text-center\">\n  <p class=\"lead\" *ngIf=\"loading\">\n    Loading...\n  </p>\n</div>\n\n<br />\n{{ iTunesSearch.iTunesApiText }}\n<br />\n<ul class=\"list-group\">\n  <li class=\"list-group-item\" *ngFor=\"let track of iTunesSearch.results\">\n    <img [src]=\"track.thumbnail\"> -\n    <a target=\"_blank\" href=\"{{ track.link }}\">{{ track.name }}</a>\n    by {{ track.artist }}\n  </li>\n</ul>\n\n\n\n"
 
 /***/ }),
 
@@ -464,7 +740,8 @@ module.exports = "<form class=\"form-inline\">\n  <div class=\"form-group\">\n  
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SearchService; });
+/* unused harmony export SearchService */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SearchItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpPromiseComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
@@ -506,6 +783,10 @@ var SearchService = /** @class */ (function () {
             _this.http.get(apiURL).toPromise().then(function (response) {
                 // Success
                 _this.iTunesApiText = response.json().resultCount;
+                _this.results = response.json().results.map(function (item) {
+                    return new SearchItem(item.trackName, item.artistName, item.trackViewUrl, item.artworkUrl30, item.artistId);
+                });
+                // this.results = response.json().results;
                 resolve();
             }, function (msg) {
                 reject(msg);
@@ -514,27 +795,43 @@ var SearchService = /** @class */ (function () {
         return promise;
     };
     SearchService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injectable */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
     ], SearchService);
     return SearchService;
 }());
 
+var SearchItem = /** @class */ (function () {
+    function SearchItem(name, artist, link, thumbnail, artistID) {
+        this.name = name;
+        this.artist = artist;
+        this.link = link;
+        this.thumbnail = thumbnail;
+        this.artistID = artistID;
+    }
+    return SearchItem;
+}());
+
 var HttpPromiseComponent = /** @class */ (function () {
     function HttpPromiseComponent(iTunesSearch) {
         this.iTunesSearch = iTunesSearch;
+        this.loading = false;
     }
     HttpPromiseComponent.prototype.ngOnInit = function () {
     };
     HttpPromiseComponent.prototype.doSearch = function (keyword) {
+        var _this = this;
         // const result = this.iTunesSearch.search(keyword).resultCount);
+        this.loading = true;
+        this.iTunesSearch.search(keyword).then(function () { return _this.loading = false; });
         this.searchText = keyword;
     };
     HttpPromiseComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-http-promise',
             template: __webpack_require__("../../../../../src/app/http-promise/http-promise.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/http-promise/http-promise.component.css")]
+            styles: [__webpack_require__("../../../../../src/app/http-promise/http-promise.component.css")],
+            providers: [SearchService]
         }),
         __metadata("design:paramtypes", [SearchService])
     ], HttpPromiseComponent);
@@ -566,7 +863,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/http/http.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"padding: 20px;\">\n  <!-- GET ON ITUNES -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGEToniTunes()\">GET on iTunes</button>\n    </div>\n    <div>\n      Result: {{ doGEToniTunesText | json }}\n    </div>\n  </div>\n\n  <!-- GET -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGET()\">GET</button>\n    </div>\n    <div>\n      Result: {{ doGetText | json }}\n    </div>\n  </div>\n\n  <!-- POST -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doPOST()\">POST</button>\n    </div>\n    <div>\n        Result: {{ doPostText }}\n    </div>\n  </div>\n\n  <!-- DELETE -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doDELETE()\">DELETE</button>\n    </div>\n    <div>\n        Result: {{ doDeleteText }}\n    </div>\n  </div>\n\n  <!-- PUT -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doPUT()\">PUT</button>\n    </div>\n    <div>\n        Result: {{ doPutText }}\n    </div>\n  </div>\n\n  <!-- GET AS PROMISE -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETasPromise()\">GET as Promise</button>\n    </div>\n    <div>\n        Result: {{ doGETasPromiseText }}\n    </div>\n  </div>\n\n  <!-- GET AS PROMISE -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETasPromiseError()\">GET as Promise Error</button>\n    </div>\n    <div>\n        Result: {{ doGETasPromiseErrorText }}\n    </div>\n  </div>\n\n  <!-- GET AS OBSERVABLE ERROR -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETasObservableError()\">GET as Obserable Error</button>\n    </div>\n    <div>\n        Result: {{ doGETasObservableErrorText }}\n    </div>\n  </div>\n\n  <!-- GET WITH HEADERS -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETWithHeaders()\">GET With Headers</button>\n    </div>\n    <div>\n        Result: {{ doGETWithHeadersText }}\n    </div>\n  </div>\n\n</div>\n\n"
+module.exports = "<app-nav-home></app-nav-home>\n<div style=\"padding: 20px;\">\n  <!-- GET ON ITUNES -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGEToniTunes()\">GET on iTunes</button>\n    </div>\n    <div>\n      Result: {{ doGEToniTunesText | json }}\n    </div>\n  </div>\n\n  <!-- GET -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGET()\">GET</button>\n    </div>\n    <div>\n      Result: {{ doGetText | json }}\n    </div>\n  </div>\n\n  <!-- POST -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doPOST()\">POST</button>\n    </div>\n    <div>\n        Result: {{ doPostText }}\n    </div>\n  </div>\n\n  <!-- DELETE -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doDELETE()\">DELETE</button>\n    </div>\n    <div>\n        Result: {{ doDeleteText }}\n    </div>\n  </div>\n\n  <!-- PUT -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doPUT()\">PUT</button>\n    </div>\n    <div>\n        Result: {{ doPutText }}\n    </div>\n  </div>\n\n  <!-- GET AS PROMISE -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETasPromise()\">GET as Promise</button>\n    </div>\n    <div>\n        Result: {{ doGETasPromiseText }}\n    </div>\n  </div>\n\n  <!-- GET AS PROMISE -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETasPromiseError()\">GET as Promise Error</button>\n    </div>\n    <div>\n        Result: {{ doGETasPromiseErrorText }}\n    </div>\n  </div>\n\n  <!-- GET AS OBSERVABLE ERROR -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETasObservableError()\">GET as Obserable Error</button>\n    </div>\n    <div>\n        Result: {{ doGETasObservableErrorText }}\n    </div>\n  </div>\n\n  <!-- GET WITH HEADERS -->\n  <div class=\"row\">\n    <div class=\"form-group\">\n      <button class=\"btn btn-primary\" (click)=\"doGETWithHeaders()\">GET With Headers</button>\n    </div>\n    <div>\n        Result: {{ doGETWithHeadersText }}\n    </div>\n  </div>\n\n</div>\n\n"
 
 /***/ }),
 
@@ -602,7 +899,7 @@ var HttpComponent = /** @class */ (function () {
     HttpComponent.prototype.doGEToniTunes = function () {
         var _this = this;
         var url = "https://itunes.apple.com/search";
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["g" /* URLSearchParams */]();
         params.set('term', 'maroon 5');
         params.set('collectionName', 'Songs About Jane');
         params.set('limit', '10');
@@ -614,7 +911,7 @@ var HttpComponent = /** @class */ (function () {
         var _this = this;
         // this.doGetText = 'doGET is clicked. This comes from the component (code-behind)';
         var url = this.apiRoot + "/get";
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["g" /* URLSearchParams */]();
         params.set('foo', 'moo');
         params.set('limit', '25');
         this.http.get(url, { params: params }).subscribe(function (response) { return _this.doGetText = response.json(); });
@@ -626,7 +923,7 @@ var HttpComponent = /** @class */ (function () {
         // this.doPostText = 'doPOST is clicked. Hello POST!';
         var url = this.apiRoot + "/post";
         var payload = { foo: 'foo', moo: 'moo' };
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["g" /* URLSearchParams */]();
         params.set('limit', '25');
         this.http.post(url, { payload: payload }, { params: params }).subscribe(function (response) { return _this.doPostText = response.text(); });
     };
@@ -635,7 +932,7 @@ var HttpComponent = /** @class */ (function () {
         // this.doDeleteText = 'Hi, DELETE!';
         var _this = this;
         var url = this.apiRoot + "/delete";
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["g" /* URLSearchParams */]();
         params.set('foo', 'moo');
         params.set('limit', '25');
         this.http.delete(url, { params: params }).subscribe(function (response) { return _this.doDeleteText = response.text(); });
@@ -657,7 +954,7 @@ var HttpComponent = /** @class */ (function () {
         var _this = this;
         // this.doGETasPromiseText = 'Seriously? GET can make promises too?!';
         var url = this.apiRoot + "/get";
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["g" /* URLSearchParams */]();
         params.set('foo', 'foo');
         params.set('moo', 'moo');
         params.set('limit', '25');
@@ -669,7 +966,7 @@ var HttpComponent = /** @class */ (function () {
         // this.doGETasPromiseErrorText = 'LOL! When you promise a lot, you are bound to make some errors';
         var url = this.apiRoot + "/post";
         var payload = { foo: 'foo', moo: 'moo' };
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["g" /* URLSearchParams */]();
         params.set('limit', '25');
         this.http.get(url, { params: params }).subscribe(function (response) { return _this.doGETasPromiseErrorText = response.text(); }, function (msg) { return _this.doGETasPromiseErrorText = msg; });
         // msg => this.doGETasPromiseErrorText = `${msg.status}` + '. ' + `${msg.statusText}`);
@@ -680,7 +977,7 @@ var HttpComponent = /** @class */ (function () {
         // this.doGETasObservableErrorText = 'What the! Get can also observe errors now? What has the world come to?';
         var url = this.apiRoot + "/post";
         var payload = { foo: 'foo', moo: 'moo' };
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["g" /* URLSearchParams */]();
         params.set('limit', '25');
         this.http.get(url, { params: params }).toPromise().then(function (response) { return _this.doGETasObservableErrorText = response.text(); }, function (msg) { return _this.doGETasObservableErrorText = msg; });
     };
@@ -692,13 +989,13 @@ var HttpComponent = /** @class */ (function () {
         // btoa converts a string to a base64
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
         headers.append('Authorization', btoa('username:password'));
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]();
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* RequestOptions */]();
         options.headers = headers;
         var url = this.apiRoot + "/get";
         this.http.get(url, options).subscribe(function (response) { return _this.doGETWithHeadersText = response.text(); }, function (msg) { return _this.doGETWithHeadersText = "" + msg.status + '. ' + ("" + msg.statusText); });
     };
     HttpComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-http',
             template: __webpack_require__("../../../../../src/app/http/http.component.html"),
             styles: [__webpack_require__("../../../../../src/app/http/http.component.css")]
@@ -773,7 +1070,7 @@ var InjectorProviderComponent = /** @class */ (function () {
     InjectorProviderComponent.prototype.ngOnInit = function () {
     };
     InjectorProviderComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-injector-provider',
             template: __webpack_require__("../../../../../src/app/injector-provider/injector-provider.component.html"),
             styles: [__webpack_require__("../../../../../src/app/injector-provider/injector-provider.component.css")]
@@ -790,7 +1087,7 @@ var ChildComponent = /** @class */ (function () {
     ChildComponent.prototype.ngOnInit = function () {
     };
     ChildComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-injector-provider-child',
             template: "\n    <div class=\"child\">\n      <p>Child</p>\n      {{ service.value }}\n    </div>\n  "
         }),
@@ -806,7 +1103,7 @@ var ParentComponent = /** @class */ (function () {
     ParentComponent.prototype.ngOnInit = function () {
     };
     ParentComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-injector-provider-parent',
             template: "\n      <div class=\"parent\">\n        <p>Parent</p>\n        <form novalidate>\n          <div class=\"form-group\">\n            <input type=\"text\"\n                   class=\"form-control\"\n                   name=\"value\"\n                   [(ngModel)]=\"service.value\">\n          </div>\n        </form>\n        <ng-content></ng-content>\n      </div>\n    ",
             viewProviders: [SimpleProviderService]
@@ -845,7 +1142,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/injector/injector.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  injector works!\n</p>"
+module.exports = "<app-nav-home></app-nav-home>\n<p>\n  injector works!\n</p>\n"
 
 /***/ }),
 
@@ -885,7 +1182,7 @@ var SendGridService = /** @class */ (function () {
     return SendGridService;
 }());
 
-var injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector */].resolveAndCreate([
+var injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ReflectiveInjector */].resolveAndCreate([
     MandrillService, SendGridService
 ]);
 var emailService = injector.get(MandrillService);
@@ -904,11 +1201,11 @@ console.log(emailService2.foo); // moo
 // A. Each injector creates its own instance of a dependency
 // B. Child injectors forward requests to their parent inject if they can't resolve the token locally
 // To configure a provider so that it returns different dependency, use the same token and different dependency class, like so:
-var injector2 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector */].resolveAndCreate([{
+var injector2 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ReflectiveInjector */].resolveAndCreate([{
         provide: 'EmailService', useClass: MandrillService
     }]);
 // To get a different dependency, use the same token, but return a different dependency
-injector2 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector */].resolveAndCreate([{
+injector2 = __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ReflectiveInjector */].resolveAndCreate([{
         provide: 'EmailService', useClass: SendGridService
     }]);
 // Now, call "get" to get an instance of the dependecy, by passing in the token
@@ -922,12 +1219,12 @@ emailService = injector2.get('EmailService');
 // { provide: SendGridService, useExisting: GenericEmailService }
 // These providers return the same instance of GenericEmailService
 // B. value
-injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector */].resolveAndCreate([{
+injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ReflectiveInjector */].resolveAndCreate([{
         provide: 'APIKey', useValue: '123456XYZ'
     }]);
 var apiKey = injector.get('APIKey');
 // Or, we can also pass an object
-injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector */].resolveAndCreate([{
+injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ReflectiveInjector */].resolveAndCreate([{
         provide: 'Config',
         useValue: Object.freeze({
             'APIKey': '123456ABCXYZ',
@@ -941,7 +1238,7 @@ var config = injector.get('Config');
 // The provider can also be configured to call a function every time a token is required, leaving it
 // to the provider to figure out what to return.
 var isProd = true;
-injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector */].resolveAndCreate([{
+injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ReflectiveInjector */].resolveAndCreate([{
         provide: 'EmailService',
         useFactory: function () {
             return isProd ? new MandrillService() : new SendGridService();
@@ -950,8 +1247,8 @@ injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector
 emailService = injector.get('EmailService');
 console.log(emailService);
 // Token can be done in 3 ways: a string token, a type/class token, or an injection token
-var EmailService = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* InjectionToken */]('EmailService');
-injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* ReflectiveInjector */].resolveAndCreate([{
+var EmailService = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* InjectionToken */]('EmailService');
+injector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* ReflectiveInjector */].resolveAndCreate([{
         provide: EmailService, useClass: SendGridService
     }]);
 emailService = injector.get(EmailService);
@@ -976,7 +1273,7 @@ var SimpleService = /** @class */ (function () {
         this.otherService = otherservice;
     }
     SimpleService = __decorate([
-        __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* Inject */])(OtherService)),
+        __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Inject */])(OtherService)),
         __metadata("design:paramtypes", [OtherService])
     ], SimpleService);
     return SimpleService;
@@ -991,7 +1288,7 @@ var InjectorComponent = /** @class */ (function () {
     InjectorComponent.prototype.ngOnInit = function () {
     };
     InjectorComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-injector',
             template: __webpack_require__("../../../../../src/app/injector/injector.component.html"),
             styles: [__webpack_require__("../../../../../src/app/injector/injector.component.css")],
@@ -1061,7 +1358,7 @@ var FakePerson = /** @class */ (function () {
 
 var JokeFormComponent = /** @class */ (function () {
     function JokeFormComponent() {
-        this.jokeCreated = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* EventEmitter */]();
+        this.jokeCreated = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
         // Example of NgIf
         // Difference between [hidden]='false' and ngIf='false' is [hidden] only hides the element, but it still exists in the page.
         // ngIf completely removes the element from the DOM
@@ -1079,11 +1376,11 @@ var JokeFormComponent = /** @class */ (function () {
         this.jokeCreated.emit(new __WEBPACK_IMPORTED_MODULE_1__joke_joke_component__["a" /* Joke */]('Blah', 'Blah from inside joke-form component'));
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["N" /* Output */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Output */])(),
         __metadata("design:type", Object)
     ], JokeFormComponent.prototype, "jokeCreated", void 0);
     JokeFormComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-joke-form',
             template: __webpack_require__("../../../../../src/app/joke-form/joke-form.component.html"),
             styles: [__webpack_require__("../../../../../src/app/joke-form/joke-form.component.css")]
@@ -1118,7 +1415,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/joke/joke.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"\">\n  <h2>joke works!</h2>\n\n  <div>\n    User ID: <ng-content select='.userID'></ng-content>\n    <br />\n    Username: <ng-content select='.username'></ng-content>\n    <br />\n    Hide: {{ data.Hide }}\n  </div>\n\n</div>\n\n"
+module.exports = "<app-nav-home></app-nav-home>\n<div class=\"\">\n  <h2>joke works!</h2>\n\n  <div>\n    User ID: <ng-content select='.userID'></ng-content>\n    <br />\n    Username: <ng-content select='.username'></ng-content>\n    <br />\n    Hide: {{ data.Hide }}\n  </div>\n\n</div>\n\n"
 
 /***/ }),
 
@@ -1163,15 +1460,15 @@ var JokeComponent = /** @class */ (function () {
         this.data = new Joke('New Joke', 'Created OnInit');
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
         __metadata("design:type", Joke)
     ], JokeComponent.prototype, "data", void 0);
     JokeComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-joke',
             template: __webpack_require__("../../../../../src/app/joke/joke.component.html"),
             styles: [__webpack_require__("../../../../../src/app/joke/joke.component.css")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewEncapsulation */].Emulated
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewEncapsulation */].Emulated
         }),
         __metadata("design:paramtypes", [])
     ], JokeComponent);
@@ -1203,7 +1500,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/model-driven-form/model-driven-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- The form below needs to be bound to the model in the component -->\n<!-- And that is done by using the binding property on the form [formGroup]=\"myForm\" -->\n\n\n\n<form [formGroup]=\"myForm\" style=\"width: 50%; padding: 20px;\" (ngSubmit)=\"onSubmit()\" >\n  <button type=\"submit\" class=\"btn btn-primary\">Submit Form</button>\n\n  <div *ngIf=\"showFormValues\">\n    <p>First name: {{ firstName.value }}</p>\n    <p>Last name: {{ lastName.value }}</p>\n    <p>Email: {{ email.value }}</p>\n    <p>Password: {{ password.value }}</p>\n    <p>Language: {{ language.value }}</p>\n  </div>\n\n  <!-- First Name and Last Name -->\n  <fieldset formGroupName=\"name\">\n    <div class=\"form-group\">\n      <label for=\"firstName\">First Name: </label>\n      <input type=\"text\"\n             class=\"form-control\"\n             formControlName=\"firstName\"\n\t\t\t       required>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"lastName\">Last Name: </label>\n      <input type=\"text\"\n             id=\"lastName\"\n             formControlName=\"lastName\"\n             class=\"form-control\"\n             required>\n    </div>\n  </fieldset>\n\n  <!-- Email -->\n  <div class=\"form-group\" [ngClass]=\"{\n    'has-danger': email.invalid && email.dirty,\n    'has-success': email.valid && email.dirty }\">\n    <label for=\"email\">Email: </label>\n    <input type=\"text\"\n           id=\"email\"\n           class=\"form-control\"\n           formControlName=\"email\"\n           required>\n    <div class=\"form-control-feedback\" *ngIf=\"email.invalid && email.dirty\">\n      Email is invalid\n    </div>\n  </div>\n\n\n  <!-- Password -->\n  <div class=\"form-group\">\n    <label for=\"password\">Password: </label>\n    <input type=\"password\"\n           id=\"password\"\n           formControlName=\"password\"\n           class=\"form-control\"\n           required>\n    <div *ngIf=\"password.invalid && password.dirty\">\n      <p *ngIf=\"password.errors.required\">Password is required</p>\n      <p *ngIf=\"password.errors.minLength\">Password must be longer than 5 characters</p>\n    </div>\n  </div>\n\n  <!-- Language dropdown -->\n  <div class=\"form-group\">\n    <label for=\"language\">Language: </label>\n    <select class=\"form-control\" formControlName=\"language\">\n      <option value=\"\">Please select a language</option>\n      <option *ngFor=\"let lang of languages\" [value]=\"lang.ID\">{{ lang.Name }}</option>\n    </select>\n  </div>\n\n  <pre>First name touched? {{ firstName.touched }}</pre>\n\n  <p>{{ languages | json }}</p>\n</form>\n"
+module.exports = "<!-- The form below needs to be bound to the model in the component -->\n<!-- And that is done by using the binding property on the form [formGroup]=\"myForm\" -->\n\n<app-nav-home></app-nav-home>\n\n<form [formGroup]=\"myForm\" style=\"width: 50%; padding: 20px;\" (ngSubmit)=\"onSubmit()\" >\n  <button type=\"submit\" class=\"btn btn-primary\">Submit Form</button>\n\n  <div *ngIf=\"showFormValues\">\n    <p>First name: {{ firstName.value }}</p>\n    <p>Last name: {{ lastName.value }}</p>\n    <p>Email: {{ email.value }}</p>\n    <p>Password: {{ password.value }}</p>\n    <p>Language: {{ language.value }}</p>\n  </div>\n\n  <!-- First Name and Last Name -->\n  <fieldset formGroupName=\"name\">\n    <div class=\"form-group\">\n      <label for=\"firstName\">First Name: </label>\n      <input type=\"text\"\n             class=\"form-control\"\n             formControlName=\"firstName\"\n\t\t\t       required>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"lastName\">Last Name: </label>\n      <input type=\"text\"\n             id=\"lastName\"\n             formControlName=\"lastName\"\n             class=\"form-control\"\n             required>\n    </div>\n  </fieldset>\n\n  <!-- Email -->\n  <div class=\"form-group\" [ngClass]=\"{\n    'has-danger': email.invalid && email.dirty,\n    'has-success': email.valid && email.dirty }\">\n    <label for=\"email\">Email: </label>\n    <input type=\"text\"\n           id=\"email\"\n           class=\"form-control\"\n           formControlName=\"email\"\n           required>\n    <div class=\"form-control-feedback\" *ngIf=\"email.invalid && email.dirty\">\n      Email is invalid\n    </div>\n  </div>\n\n\n  <!-- Password -->\n  <div class=\"form-group\">\n    <label for=\"password\">Password: </label>\n    <input type=\"password\"\n           id=\"password\"\n           formControlName=\"password\"\n           class=\"form-control\"\n           required>\n    <div *ngIf=\"password.invalid && password.dirty\">\n      <p *ngIf=\"password.errors.required\">Password is required</p>\n      <p *ngIf=\"password.errors.minLength\">Password must be longer than 5 characters</p>\n    </div>\n  </div>\n\n  <!-- Language dropdown -->\n  <div class=\"form-group\">\n    <label for=\"language\">Language: </label>\n    <select class=\"form-control\" formControlName=\"language\">\n      <option value=\"\">Please select a language</option>\n      <option *ngFor=\"let lang of languages\" [value]=\"lang.ID\">{{ lang.Name }}</option>\n    </select>\n  </div>\n\n  <pre>First name touched? {{ firstName.touched }}</pre>\n\n  <p>{{ languages | json }}</p>\n</form>\n"
 
 /***/ }),
 
@@ -1259,7 +1556,7 @@ var ModelDrivenFormComponent = /** @class */ (function () {
         this.showFormValues = true;
     };
     ModelDrivenFormComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-model-driven-form',
             template: __webpack_require__("../../../../../src/app/model-driven-form/model-driven-form.component.html"),
             styles: [__webpack_require__("../../../../../src/app/model-driven-form/model-driven-form.component.css")]
@@ -1267,6 +1564,67 @@ var ModelDrivenFormComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModelDrivenFormComponent);
     return ModelDrivenFormComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/nav-home/nav-home.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/nav-home/nav-home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-light bg-faded\" style=\"border: 1px solid Red; padding: 20px;\">\n  <a class=\"navbar-brand\" href=\"/#/\">iTunes Search App</a>\n  <ul class=\"nav navbar-nav\">\n    <li class=\"nav-item active\">\n      <a class=\"nav-link\" href=\"/#/\">Home</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"/#/jsonp\">HTTP JSONP</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"/#/joke\">Joke</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"/#/injector\">Injector</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"/#/modeldriven\">Model-driven</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"/#/templatedriven\">Template-driven</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"/#/http\">HTTP</a>\n    </li>\n    <li class=\"nav-item\">\n      <a class=\"nav-link\" href=\"/#/httppromise\">HTTP Promise</a>\n    </li>\n  </ul>\n</nav>\n<br />\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/nav-home/nav-home.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavHomeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var NavHomeComponent = /** @class */ (function () {
+    function NavHomeComponent() {
+    }
+    NavHomeComponent.prototype.ngOnInit = function () {
+    };
+    NavHomeComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-nav-home',
+            template: __webpack_require__("../../../../../src/app/nav-home/nav-home.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/nav-home/nav-home.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], NavHomeComponent);
+    return NavHomeComponent;
 }());
 
 
@@ -1323,7 +1681,7 @@ var RxObservableComponent = /** @class */ (function () {
     RxObservableComponent.prototype.ngOnInit = function () {
     };
     RxObservableComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-rx-observable',
             template: __webpack_require__("../../../../../src/app/rx-observable/rx-observable.component.html"),
             styles: [__webpack_require__("../../../../../src/app/rx-observable/rx-observable.component.css")]
@@ -1358,7 +1716,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/template-driven-form/template-driven-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--\n  In template-driven approach, Angular creates the model, FormGroups and FormControls, for us via directives we add to the template.\n  Template-Driven Forms are just Model-Driven Forms but driven by directives in the template, versus code in the component.\n  In template-driven, we use directives to create the model.\n  In model-driven, we create a model in the component, and then use directives to map elements in the template to our form model.\n-->\n\n<form #f=\"ngForm\" style=\"width: 50%; padding: 10px;\">\n\n  <button type=\"submit\" class=\"btn btn-primary\" (click)=\"OnSubmit()\" [disabled]=\"f.invalid\">Submit</button>\n  <p>\n    {{ onSubmitText }}\n  </p>\n\n  <pre>First Name: {{ firstName.value }}</pre>\n  <pre>Last Name: {{ lastName.value }}</pre>\n  <pre>Email: {{ email.value }}</pre>\n  <pre>Password: {{ password.value }}</pre>\n  <pre>Language: {{ language.value }}</pre>\n\n  <fieldset ngModelGroup=\"name\">\n    <!-- FIRST NAME -->\n    <div class=\"form-group\">\n      <label>First Name: </label>\n      <input type=\"text\"\n             class=\"form-control\"\n             name=\"firstName\"\n             [(ngModel)]=\"model.firstName\"\n             #firstName=\"ngModel\"\n             required>\n    </div>\n    <!-- LAST NAME -->\n    <div class=\"form-group\">\n      <label>Last Name:</label>\n      <input type=\"text\"\n             class=\"form-control\"\n             name=\"lastName\"\n             [(ngModel)]=\"model.lastName\"\n             #lastName=\"ngModel\">\n    </div>\n  </fieldset>\n\n  <!-- EMAIL -->\n  <div class=\"form-group\">\n    <label>Email:</label>\n    <input type=\"text\"\n           class=\"form-control\"\n           name=\"email\"\n           [(ngModel)]=\"model.email\"\n           #email=\"ngModel\"\n           required>\n  </div>\n\n  <!-- PASSWORD -->\n  <div class=\"form-group\">\n    <label>Password: </label>\n    <input type=\"text\"\n           class=\"form-control\"\n           name=\"password\"\n           [(ngModel)]=\"model.password\"\n           #password=\"ngModel\"\n           required\n           minlength=\"5\">\n  </div>\n\n  <!-- LANGUAGE -->\n  <div class=\"form-group\">\n    <label>Language: </label>\n    <select class=\"form-control\"\n            name=\"language\"\n            [(ngModel)]=\"model.language\"\n            #language=\"ngModel\">\n      <option value=\"\">Please select a language</option>\n      <option *ngFor=\"let language of langs\" [value]=\"language\">{{ language }}</option>\n    </select>\n  </div>\n</form>\n"
+module.exports = "<!--\n  In template-driven approach, Angular creates the model, FormGroups and FormControls, for us via directives we add to the template.\n  Template-Driven Forms are just Model-Driven Forms but driven by directives in the template, versus code in the component.\n  In template-driven, we use directives to create the model.\n  In model-driven, we create a model in the component, and then use directives to map elements in the template to our form model.\n-->\n\n<app-nav-home></app-nav-home>\n\n<form #f=\"ngForm\" style=\"width: 50%; padding: 10px;\">\n\n  <button type=\"submit\" class=\"btn btn-primary\" (click)=\"OnSubmit()\" [disabled]=\"f.invalid\">Submit</button>\n  <p>\n    {{ onSubmitText }}\n  </p>\n\n  <pre>First Name: {{ firstName.value }}</pre>\n  <pre>Last Name: {{ lastName.value }}</pre>\n  <pre>Email: {{ email.value }}</pre>\n  <pre>Password: {{ password.value }}</pre>\n  <pre>Language: {{ language.value }}</pre>\n\n  <fieldset ngModelGroup=\"name\">\n    <!-- FIRST NAME -->\n    <div class=\"form-group\">\n      <label>First Name: </label>\n      <input type=\"text\"\n             class=\"form-control\"\n             name=\"firstName\"\n             [(ngModel)]=\"model.firstName\"\n             #firstName=\"ngModel\"\n             required>\n    </div>\n    <!-- LAST NAME -->\n    <div class=\"form-group\">\n      <label>Last Name:</label>\n      <input type=\"text\"\n             class=\"form-control\"\n             name=\"lastName\"\n             [(ngModel)]=\"model.lastName\"\n             #lastName=\"ngModel\">\n    </div>\n  </fieldset>\n\n  <!-- EMAIL -->\n  <div class=\"form-group\">\n    <label>Email:</label>\n    <input type=\"text\"\n           class=\"form-control\"\n           name=\"email\"\n           [(ngModel)]=\"model.email\"\n           #email=\"ngModel\"\n           required>\n  </div>\n\n  <!-- PASSWORD -->\n  <div class=\"form-group\">\n    <label>Password: </label>\n    <input type=\"text\"\n           class=\"form-control\"\n           name=\"password\"\n           [(ngModel)]=\"model.password\"\n           #password=\"ngModel\"\n           required\n           minlength=\"5\">\n  </div>\n\n  <!-- LANGUAGE -->\n  <div class=\"form-group\">\n    <label>Language: </label>\n    <select class=\"form-control\"\n            name=\"language\"\n            [(ngModel)]=\"model.language\"\n            #language=\"ngModel\">\n      <option value=\"\">Please select a language</option>\n      <option *ngFor=\"let language of langs\" [value]=\"language\">{{ language }}</option>\n    </select>\n  </div>\n</form>\n"
 
 /***/ }),
 
@@ -1413,11 +1771,11 @@ var TemplateDrivenFormComponent = /** @class */ (function () {
         // this.form.reset();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewChild */])('f'),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* ViewChild */])('f'),
         __metadata("design:type", Object)
     ], TemplateDrivenFormComponent.prototype, "form", void 0);
     TemplateDrivenFormComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-template-driven-form',
             template: __webpack_require__("../../../../../src/app/template-driven-form/template-driven-form.component.html"),
             styles: [__webpack_require__("../../../../../src/app/template-driven-form/template-driven-form.component.css")]
@@ -1461,7 +1819,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
